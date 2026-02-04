@@ -154,6 +154,12 @@ ports:
   - "8000:80"  # Use port 8000 instead of 80
 ```
 
+### Enable Routing with htaccess
+
+```shell script
+docker exec -it container_name a2enmod rewrite
+docker exec -it container_name apachectl restart
+```
 
 ### View Logs
 
